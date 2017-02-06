@@ -4,7 +4,7 @@ public class Student {
     String email;
 
     public Student() {
-        email = "YouDidNotEnterEmail";
+        email = "NULL";
     }
 
     public Student(String email) {

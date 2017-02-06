@@ -6,7 +6,8 @@ import java.util.Random;
 
 public class StudentQuestions {
 
-    public static String[] questionArray() {
+    public static String[] questionArray()
+    {
 
         final int QUESTION_NUMBER = 5;
 
@@ -20,22 +21,25 @@ public class StudentQuestions {
         return theQuestions;
     }
 
-    public static int currentChapter() {
+    public static int currentChapter()
+    {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter this weeks chapter number:");
         int chapter = input.nextInt();
 
         return chapter;
-
     }
-    public static int getQuestionArraySize(){
+
+    public static int getQuestionArraySize()
+    {
         String[] array = StudentQuestions.questionArray();
         int length = array.length;
         return length;
     }
 
-    public static int[] RNGNoDupe(){
+    public static int[] RNGNoDupe()
+    {
         int size =  getQuestionArraySize();
         int[] array = new int[size];
         int x = 0;
@@ -46,11 +50,13 @@ public class StudentQuestions {
 
         Random rand = new Random();
 
-        while (list.size() > 0) {
-        int index = rand.nextInt(list.size());
-        array[x] = list.remove(index)-1;
-        x++;
-    }
+        while (list.size() > 0)
+        {
+            int index = rand.nextInt(list.size());
+            array[x] = list.remove(index)-1;
+            x++;
+        }
+
         return array;
     }
 
