@@ -16,10 +16,10 @@ public class StudentRoster
         Student student3 = new Student("ThomasJefferson@gmail.com");
         list[2]= student3;
 
-        Student student4 = new Student("DonaldTrump@gmail.com");
+        Student student4 = new Student("JamesMadison@gmail.com");
         list[3]= student4;
 
-        Student student5 = new Student("RonaldRegan@gmail.com");
+        Student student5 = new Student("DonaldTrump@gmail.com");
         list[4]= student5;
 
         return list;
