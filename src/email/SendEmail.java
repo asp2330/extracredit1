@@ -9,7 +9,7 @@ public class SendEmail
         String[] assignments = StudentQuestions.questionArray();
         int chapter = StudentQuestions.currentChapter();
         int array[] = StudentQuestions.RNGNoDupe();
-                String mailSmtpHost = "localhost";
+        String mailSmtpHost = "localhost";
 
 
         for (int i=0; i < roster.length; i++)
